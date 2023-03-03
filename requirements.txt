@@ -1,2 +1,6 @@
 openpyxl
 pandas==1.5.3
+numpy
+jupyter
+matplotlib
+pathlib
