@@ -164,5 +164,5 @@ def get_symbols_sequence(symbols_saccade, symbols_fixation, sf_list_all) -> List
         idx = np.asarray([0 if item[0] == "Saccade" else 1 for item in sf_all])
         res[np.where(idx==0)] = sym_s
         res[np.where(idx==1)] = sym_f
-        sequence_symbols.append(res)
+        sequence_symbols.append("".join(res))
     return sequence_symbols
